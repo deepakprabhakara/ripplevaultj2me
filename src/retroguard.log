@@ -1,0 +1,495 @@
+# If this log is to be used for incremental obfuscation / patch generation, 
+# add any '.class', '.method', '.field' and '.attribute' restrictions here:
+
+
+#-DO-NOT-EDIT-BELOW-THIS-LINE------------------DO-NOT-EDIT-BELOW-THIS-LINE--
+#
+# RetroGuard Bytecode Obfuscator, v1.1.13, a product of Retrologic Systems - www.retrologic.com
+#
+# Logfile created on Fri Dec 19 10:22:04 GMT+08:00 2003
+#
+# Jar file to be obfuscated:           Mobilebag_5.jar
+# Target Jar file for obfuscated code: Mobilebag-obf.jar
+# RetroGuard Script file used:         (none, defaults used)
+#
+#
+# WARNING - Methods are called which may unavoidably break in obfuscated version at runtime.
+#          Please review your source code to ensure that the dangerous methods are not intended
+#          to act on classes which are within the obfuscated Jar file.
+#      Your class mb/gui/siemens_small/GUIFolderScreen calls the java/lang/Class method forName(Ljava/lang/String;)Ljava/lang/Class;
+#      Your class mb/gui/siemens_small/GUIMessageScreen calls the java/lang/Class method forName(Ljava/lang/String;)Ljava/lang/Class;
+#
+# Memory in use after class data structure built: 648296 bytes
+# Total memory available                        : 2031616 bytes
+#
+#
+# Obfuscated name overloading frequency:
+#  'a'   	used 75 times	(19%)
+#  'if'   	used 30 times	(7%)
+#  'do'   	used 22 times	(5%)
+#  'for'   	used 19 times	(4%)
+#  'int'   	used 16 times	(4%)
+#  'new'   	used 14 times	(3%)
+#  'b'   	used 12 times	(3%)
+#  'byte'   	used 11 times	(2%)
+#  'try'   	used 11 times	(2%)
+#  'c'   	used 9 times	(2%)
+#  'case'   	used 9 times	(2%)
+#  'char'   	used 8 times	(2%)
+#  'else'   	used 7 times	(1%)
+#  'd'   	used 6 times	(1%)
+#  'e'   	used 6 times	(1%)
+#  'f'   	used 6 times	(1%)
+#  'g'   	used 5 times	(1%)
+#  'h'   	used 5 times	(1%)
+#  'i'   	used 5 times	(1%)
+#  'long'   	used 5 times	(1%)
+#  'goto'   	used 5 times	(1%)
+#  'void'   	used 5 times	(1%)
+#  'null'   	used 5 times	(1%)
+#  'j'   	used 4 times	(1%)
+#  'k'   	used 4 times	(1%)
+#  'l'   	used 4 times	(1%)
+#  'm'   	used 4 times	(1%)
+#  'n'   	used 4 times	(1%)
+#  'o'   	used 4 times	(1%)
+#  'p'   	used 4 times	(1%)
+#  Other names (each used in <1% of mappings) used a total of 66 times (27%)
+#
+#
+# Names reserved from obfuscation:
+#
+#
+#
+# Obfuscated name mappings (some of these may be unchanged due to polymorphism constraints):
+#
+.package_map mb a
+.package_map mb/utils a
+.package_map mb/utils/siemens a
+.class_map mb/utils/siemens/SoundSiemensPlayer a
+.method_map mb/utils/siemens/SoundSiemensPlayer/play ([B)V a
+.method_map mb/utils/siemens/SoundSiemensPlayer/stop ()V a
+.method_map mb/utils/siemens/SoundSiemensPlayer/isPlaying ()Z if
+.class_map mb/utils/siemens/SoundMidiPlayer b
+.method_map mb/utils/siemens/SoundMidiPlayer/play ([B)V a
+.method_map mb/utils/siemens/SoundMidiPlayer/stop ()V a
+.method_map mb/utils/siemens/SoundMidiPlayer/isPlaying ()Z if
+.class_map mb/utils/siemens/SoundPlayer c
+.field_map mb/utils/siemens/SoundPlayer/rng a
+.method_map mb/utils/siemens/SoundPlayer/play ([B)V a
+.method_map mb/utils/siemens/SoundPlayer/stop ()V a
+.method_map mb/utils/siemens/SoundPlayer/isPlaying ()Z if
+.class_map mb/utils/Constants a
+.field_map mb/utils/Constants/TEMPLATEPOLYSOUND a
+.field_map mb/utils/Constants/CHARTSCREEN if
+.field_map mb/utils/Constants/AUDIO_NOKIA do
+.field_map mb/utils/Constants/TEMPLATEMONOSOUND for
+.field_map mb/utils/Constants/MODEL_S60 int
+.field_map mb/utils/Constants/CLIENT_OVERLOOKED new
+.field_map mb/utils/Constants/DOWNLOAD try
+.field_map mb/utils/Constants/FOLDERHOTCONTENT byte
+.field_map mb/utils/Constants/TYPEALL case
+.field_map mb/utils/Constants/BYTEARR char
+.field_map mb/utils/Constants/FOLDERDOWNLOADARCHIVE else
+.field_map mb/utils/Constants/CLIENT_NOTSEEN goto
+.field_map mb/utils/Constants/AUDIO_SIEMENS long
+.field_map mb/utils/Constants/AUDIO_UNKOWN null
+.field_map mb/utils/Constants/CLIENT_ONRMS void
+.field_map mb/utils/Constants/STRING b
+.field_map mb/utils/Constants/MODEL_S40 c
+.field_map mb/utils/Constants/BUY d
+.field_map mb/utils/Constants/FAIL e
+.field_map mb/utils/Constants/CLIENT_LOOKED f
+.field_map mb/utils/Constants/MODEL_SIEMENS_SMALL g
+.field_map mb/utils/Constants/FAILRECORDSTOREFULL h
+.field_map mb/utils/Constants/TYPETEXT i
+.field_map mb/utils/Constants/TEMPLATEPICTURE j
+.field_map mb/utils/Constants/PROMPTSCREEN k
+.field_map mb/utils/Constants/RECOMMEND l
+.field_map mb/utils/Constants/AUDIO_MMAPI m
+.field_map mb/utils/Constants/SUCCESS n
+.field_map mb/utils/Constants/SUCCESSCONDITIONAL o
+.field_map mb/utils/Constants/TEMPLATETEXT p
+.class_map mb/utils/ByteUtility b
+.field_map mb/utils/ByteUtility/pow a
+.method_map mb/utils/ByteUtility/reverse ([B)[B a
+.method_map mb/utils/ByteUtility/toLong ([B)J if
+.method_map mb/utils/ByteUtility/getBytes (II)[B a
+.method_map mb/utils/ByteUtility/init ()V a
+.method_map mb/utils/ByteUtility/toInt ([B)I do
+.class_map mb/utils/Comparable c
+.method_map mb/utils/Comparable/compareTo (Lmb/utils/Comparable;)I a
+.package_map mb/gui b
+.package_map mb/gui/siemens_small a
+.class_map mb/gui/siemens_small/Mobilebag a
+.field_map mb/gui/siemens_small/Mobilebag/recepients a
+.field_map mb/gui/siemens_small/Mobilebag/recommend if
+.field_map mb/gui/siemens_small/Mobilebag/quit do
+.field_map mb/gui/siemens_small/Mobilebag/back for
+.field_map mb/gui/siemens_small/Mobilebag/guiscreen int
+.field_map mb/gui/siemens_small/Mobilebag/display new
+.field_map mb/gui/siemens_small/Mobilebag/select try
+.field_map mb/gui/siemens_small/Mobilebag/cancel byte
+.field_map mb/gui/siemens_small/Mobilebag/message case
+.method_map mb/gui/siemens_small/Mobilebag/repaintFolderScreen (Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/recommend (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/synchronise_step2 (Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/paintCategoryScreen (Ljava/lang/String;)V if
+.method_map mb/gui/siemens_small/Mobilebag/synchroniseheap_step2 (Ljava/lang/String;Ljava/lang/String;)V if
+.method_map mb/gui/siemens_small/Mobilebag/download (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/synchroniseheap_step1 (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/returnSelectCommand ()Ljavax/microedition/lcdui/Command; a
+.method_map mb/gui/siemens_small/Mobilebag/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/Mobilebag/synchronise_step1 ()V if
+.method_map mb/gui/siemens_small/Mobilebag/destroyApp (Z)V destroyApp
+.method_map mb/gui/siemens_small/Mobilebag/paintChartScreen ()V do
+.method_map mb/gui/siemens_small/Mobilebag/buy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/paintPromptScreen (Ljava/lang/String;)V do
+.method_map mb/gui/siemens_small/Mobilebag/repaintMessageScreen (Lmb/entity/MessageElement;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/synchroniseheap_step3 ()V for
+.method_map mb/gui/siemens_small/Mobilebag/paintMessageScreen (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/Mobilebag/pauseApp ()V pauseApp
+.method_map mb/gui/siemens_small/Mobilebag/returnDisplay ()Ljavax/microedition/lcdui/Display; int
+.method_map mb/gui/siemens_small/Mobilebag/synchronise_step3 ()V new
+.method_map mb/gui/siemens_small/Mobilebag/run ()V try
+.method_map mb/gui/siemens_small/Mobilebag/paintFolderScreen (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V if
+.method_map mb/gui/siemens_small/Mobilebag/quit ()V byte
+.method_map mb/gui/siemens_small/Mobilebag/callSelectCapture ()V case
+.method_map mb/gui/siemens_small/Mobilebag/startApp ()V startApp
+.method_map mb/gui/siemens_small/Mobilebag/cleanUp ()V char
+.class_map mb/gui/siemens_small/GUIScreen b
+.field_map mb/gui/siemens_small/GUIScreen/KEY_MIDDLE a
+.field_map mb/gui/siemens_small/GUIScreen/KEY_LEFT if
+.field_map mb/gui/siemens_small/GUIScreen/MESSAGESCREENNAME do
+.field_map mb/gui/siemens_small/GUIScreen/KEY_UP for
+.field_map mb/gui/siemens_small/GUIScreen/midlet int
+.field_map mb/gui/siemens_small/GUIScreen/RECOMMENDSCREENNAME new
+.field_map mb/gui/siemens_small/GUIScreen/pos try
+.field_map mb/gui/siemens_small/GUIScreen/KEY_DOWN byte
+.field_map mb/gui/siemens_small/GUIScreen/screenname case
+.field_map mb/gui/siemens_small/GUIScreen/KEY_SELECT char
+.field_map mb/gui/siemens_small/GUIScreen/KEY_RIGHT else
+.method_map mb/gui/siemens_small/GUIScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUIScreen/scaleImage (Ljavax/microedition/lcdui/Image;II)Ljavax/microedition/lcdui/Image; a
+.method_map mb/gui/siemens_small/GUIScreen/setScreenname (Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/GUIScreen/getSelectedIndex ()I if
+.method_map mb/gui/siemens_small/GUIScreen/getScreenname ()Ljava/lang/String; do
+.class_map mb/gui/siemens_small/GUIChartScreen c
+.field_map mb/gui/siemens_small/GUIChartScreen/maxentries goto
+.field_map mb/gui/siemens_small/GUIChartScreen/newsizes long
+.field_map mb/gui/siemens_small/GUIChartScreen/oldlinks null
+.field_map mb/gui/siemens_small/GUIChartScreen/framebegin void
+.field_map mb/gui/siemens_small/GUIChartScreen/oldsizes b
+.field_map mb/gui/siemens_small/GUIChartScreen/newlinks c
+.field_map mb/gui/siemens_small/GUIChartScreen/curpos d
+.field_map mb/gui/siemens_small/GUIChartScreen/freememory e
+.method_map mb/gui/siemens_small/GUIChartScreen/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/GUIChartScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUIChartScreen/keyPressed (I)V keyPressed
+.method_map mb/gui/siemens_small/GUIChartScreen/selectDeselect ()V for
+.method_map mb/gui/siemens_small/GUIChartScreen/paint (Ljavax/microedition/lcdui/Graphics;)V paint
+.class_map mb/gui/siemens_small/GUIFolderScreen d
+.field_map mb/gui/siemens_small/GUIFolderScreen/category f
+.field_map mb/gui/siemens_small/GUIFolderScreen/firstindex g
+.field_map mb/gui/siemens_small/GUIFolderScreen/staticimage h
+.field_map mb/gui/siemens_small/GUIFolderScreen/logicthread i
+.field_map mb/gui/siemens_small/GUIFolderScreen/additionalinfo j
+.field_map mb/gui/siemens_small/GUIFolderScreen/type k
+.field_map mb/gui/siemens_small/GUIFolderScreen/images l
+.field_map mb/gui/siemens_small/GUIFolderScreen/guipos m
+.field_map mb/gui/siemens_small/GUIFolderScreen/messagemrefs n
+.field_map mb/gui/siemens_small/GUIFolderScreen/recommended o
+.field_map mb/gui/siemens_small/GUIFolderScreen/links p
+.field_map mb/gui/siemens_small/GUIFolderScreen/hot q
+.method_map mb/gui/siemens_small/GUIFolderScreen/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/GUIFolderScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUIFolderScreen/getType ()Ljava/lang/String; int
+.method_map mb/gui/siemens_small/GUIFolderScreen/keyPressed (I)V keyPressed
+.method_map mb/gui/siemens_small/GUIFolderScreen/getCategory ()Ljava/lang/String; new
+.method_map mb/gui/siemens_small/GUIFolderScreen/getSelectedIndex ()I if
+.method_map mb/gui/siemens_small/GUIFolderScreen/paint (Ljavax/microedition/lcdui/Graphics;)V paint
+.method_map mb/gui/siemens_small/GUIFolderScreen/getSelectedMref ()Ljava/lang/String; try
+.class_map mb/gui/siemens_small/GUIGaugeForm$DownloadTimer a
+.field_map mb/gui/siemens_small/GUIGaugeForm$DownloadTimer/this$0 this$0
+.method_map mb/gui/siemens_small/GUIGaugeForm$DownloadTimer/run ()V run
+.class_map mb/gui/siemens_small/GUIGaugeForm$1 1
+.class_map mb/gui/siemens_small/GUIGaugeForm e
+.field_map mb/gui/siemens_small/GUIGaugeForm/tmr a
+.field_map mb/gui/siemens_small/GUIGaugeForm/i if
+.field_map mb/gui/siemens_small/GUIGaugeForm/MAX do
+.field_map mb/gui/siemens_small/GUIGaugeForm/cursor for
+.field_map mb/gui/siemens_small/GUIGaugeForm/progressmeter int
+.method_map mb/gui/siemens_small/GUIGaugeForm/access$100 (Lmb/gui/siemens_small/GUIGaugeForm;)Ljavax/microedition/lcdui/Gauge; access$100
+.method_map mb/gui/siemens_small/GUIGaugeForm/cleanUp ()V a
+.class_map mb/gui/siemens_small/GUICategoryScreen f
+.field_map mb/gui/siemens_small/GUICategoryScreen/images r
+.field_map mb/gui/siemens_small/GUICategoryScreen/screennum s
+.field_map mb/gui/siemens_small/GUICategoryScreen/links t
+.field_map mb/gui/siemens_small/GUICategoryScreen/scImages u
+.field_map mb/gui/siemens_small/GUICategoryScreen/category v
+.field_map mb/gui/siemens_small/GUICategoryScreen/scrH w
+.field_map mb/gui/siemens_small/GUICategoryScreen/newScale x
+.method_map mb/gui/siemens_small/GUICategoryScreen/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/GUICategoryScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUICategoryScreen/keyPressed (I)V keyPressed
+.method_map mb/gui/siemens_small/GUICategoryScreen/paint (Ljavax/microedition/lcdui/Graphics;)V paint
+.class_map mb/gui/siemens_small/LogicThread g
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISE2 a
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISE1 if
+.field_map mb/gui/siemens_small/LogicThread/DOWNLOAD do
+.field_map mb/gui/siemens_small/LogicThread/GETMESSAGE for
+.field_map mb/gui/siemens_small/LogicThread/midlet int
+.field_map mb/gui/siemens_small/LogicThread/SOUND new
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISEHEAP3 try
+.field_map mb/gui/siemens_small/LogicThread/RECOMMEND byte
+.field_map mb/gui/siemens_small/LogicThread/threadtype case
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISEHEAP2 char
+.field_map mb/gui/siemens_small/LogicThread/GETMESSAGES else
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISEHEAP1 goto
+.field_map mb/gui/siemens_small/LogicThread/player long
+.field_map mb/gui/siemens_small/LogicThread/parameters null
+.field_map mb/gui/siemens_small/LogicThread/BUY void
+.field_map mb/gui/siemens_small/LogicThread/SYNCHRONISE3 b
+.method_map mb/gui/siemens_small/LogicThread/displayError (Ljava/lang/String;I)V a
+.method_map mb/gui/siemens_small/LogicThread/displayError (Ljava/lang/String;)V a
+.method_map mb/gui/siemens_small/LogicThread/stop ()V stop
+.method_map mb/gui/siemens_small/LogicThread/run ()V run
+.method_map mb/gui/siemens_small/LogicThread/wait (I)V a
+.class_map mb/gui/siemens_small/GUIMessageScreen h
+.field_map mb/gui/siemens_small/GUIMessageScreen/name y
+.field_map mb/gui/siemens_small/GUIMessageScreen/category z
+.field_map mb/gui/siemens_small/GUIMessageScreen/extra A
+.field_map mb/gui/siemens_small/GUIMessageScreen/cost B
+.field_map mb/gui/siemens_small/GUIMessageScreen/image C
+.field_map mb/gui/siemens_small/GUIMessageScreen/logicthread D
+.field_map mb/gui/siemens_small/GUIMessageScreen/index E
+.field_map mb/gui/siemens_small/GUIMessageScreen/maxchars F
+.field_map mb/gui/siemens_small/GUIMessageScreen/me G
+.field_map mb/gui/siemens_small/GUIMessageScreen/type H
+.field_map mb/gui/siemens_small/GUIMessageScreen/top I
+.field_map mb/gui/siemens_small/GUIMessageScreen/linepos J
+.field_map mb/gui/siemens_small/GUIMessageScreen/ht K
+.field_map mb/gui/siemens_small/GUIMessageScreen/template L
+.field_map mb/gui/siemens_small/GUIMessageScreen/links M
+.field_map mb/gui/siemens_small/GUIMessageScreen/maxlines N
+.method_map mb/gui/siemens_small/GUIMessageScreen/paint (Ljavax/microedition/lcdui/Graphics;)V paint
+.method_map mb/gui/siemens_small/GUIMessageScreen/keyPressed (I)V keyPressed
+.method_map mb/gui/siemens_small/GUIMessageScreen/getIndex ()I byte
+.method_map mb/gui/siemens_small/GUIMessageScreen/getType ()Ljava/lang/String; case
+.method_map mb/gui/siemens_small/GUIMessageScreen/setCategory (Ljava/lang/String;)V if
+.method_map mb/gui/siemens_small/GUIMessageScreen/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/GUIMessageScreen/getCategory ()Ljava/lang/String; char
+.method_map mb/gui/siemens_small/GUIMessageScreen/setType (Ljava/lang/String;)V do
+.method_map mb/gui/siemens_small/GUIMessageScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUIMessageScreen/getSelectedMref ()Ljava/lang/String; else
+.class_map mb/gui/siemens_small/GUIQuestionScreen i
+.field_map mb/gui/siemens_small/GUIQuestionScreen/i O
+.method_map mb/gui/siemens_small/GUIQuestionScreen/commandAction (Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V commandAction
+.method_map mb/gui/siemens_small/GUIQuestionScreen/cleanUp ()V a
+.method_map mb/gui/siemens_small/GUIQuestionScreen/keyPressed (I)V keyPressed
+.method_map mb/gui/siemens_small/GUIQuestionScreen/paint (Ljavax/microedition/lcdui/Graphics;)V paint
+.package_map mb/entity c
+.class_map mb/entity/TypeElement a
+.field_map mb/entity/TypeElement/imagetype a
+.field_map mb/entity/TypeElement/smstypes if
+.field_map mb/entity/TypeElement/priority do
+.field_map mb/entity/TypeElement/displayname for
+.field_map mb/entity/TypeElement/type int
+.field_map mb/entity/TypeElement/image new
+.method_map mb/entity/TypeElement/getType ()Ljava/lang/String; a
+.method_map mb/entity/TypeElement/getDisplayname ()Ljava/lang/String; if
+.method_map mb/entity/TypeElement/getImagetype ()I do
+.method_map mb/entity/TypeElement/getPriority ()I for
+.method_map mb/entity/TypeElement/compareTo (Lmb/utils/Comparable;)I a
+.method_map mb/entity/TypeElement/getSmstypes ()[I int
+.method_map mb/entity/TypeElement/getImage ()[B new
+.class_map mb/entity/MessageElement b
+.field_map mb/entity/MessageElement/buycost C
+.field_map mb/entity/MessageElement/downloadable D
+.field_map mb/entity/MessageElement/type E
+.field_map mb/entity/MessageElement/address F
+.field_map mb/entity/MessageElement/licensenames G
+.field_map mb/entity/MessageElement/recommended H
+.field_map mb/entity/MessageElement/versions I
+.field_map mb/entity/MessageElement/gsmtype J
+.field_map mb/entity/MessageElement/clientstatus K
+.field_map mb/entity/MessageElement/cached L
+.field_map mb/entity/MessageElement/mref M
+.field_map mb/entity/MessageElement/subtype N
+.field_map mb/entity/MessageElement/contentdescription O
+.field_map mb/entity/MessageElement/messagetext P
+.field_map mb/entity/MessageElement/contentid Q
+.field_map mb/entity/MessageElement/contenttitle R
+.field_map mb/entity/MessageElement/category S
+.field_map mb/entity/MessageElement/messagecontent T
+.field_map mb/entity/MessageElement/downloadcost U
+.field_map mb/entity/MessageElement/hot V
+.field_map mb/entity/MessageElement/supplementarymrefs W
+.field_map mb/entity/MessageElement/template X
+.field_map mb/entity/MessageElement/licensedescriptions Y
+.method_map mb/entity/MessageElement/setClientstatus (I)V do
+.method_map mb/entity/MessageElement/getTemplate ()I goto
+.method_map mb/entity/MessageElement/getContentid ()Ljava/lang/String; long
+.method_map mb/entity/MessageElement/getMessagetext ()Ljava/lang/String; null
+.method_map mb/entity/MessageElement/setRecommended ()V void
+.method_map mb/entity/MessageElement/isHot ()Z b
+.method_map mb/entity/MessageElement/initSubtype (I)V for
+.method_map mb/entity/MessageElement/getAddress ()Ljava/lang/String; c
+.method_map mb/entity/MessageElement/getDownloadcost ()Ljava/lang/String; d
+.method_map mb/entity/MessageElement/getGsmtype ()I e
+.method_map mb/entity/MessageElement/getCategory ()Ljava/lang/String; f
+.method_map mb/entity/MessageElement/initMessage (Ljava/util/Hashtable;)V a
+.method_map mb/entity/MessageElement/getBuycost ()Ljava/util/Vector; g
+.method_map mb/entity/MessageElement/getMessagecontent ()[B h
+.method_map mb/entity/MessageElement/isDownloadable ()Z i
+.method_map mb/entity/MessageElement/setHot ()V j
+.method_map mb/entity/MessageElement/getContentdescription ()Ljava/lang/String; k
+.method_map mb/entity/MessageElement/getSupplementarymrefs ()Ljava/util/Vector; l
+.method_map mb/entity/MessageElement/tokenize ([BLjava/lang/String;)Ljava/util/Vector; a
+.method_map mb/entity/MessageElement/getSubtype ()Ljava/lang/String; m
+.method_map mb/entity/MessageElement/getClientstatus ()I n
+.method_map mb/entity/MessageElement/getType ()Ljava/lang/String; o
+.method_map mb/entity/MessageElement/getContenttitle ()Ljava/lang/String; p
+.method_map mb/entity/MessageElement/setMessagetext (Ljava/lang/String;)V new
+.method_map mb/entity/MessageElement/initType (I)V int
+.method_map mb/entity/MessageElement/initReferencedMessage (Ljava/util/Hashtable;)V if
+.method_map mb/entity/MessageElement/isCached ()Z q
+.method_map mb/entity/MessageElement/getLicensenames ()Ljava/util/Vector; r
+.method_map mb/entity/MessageElement/isRecommended ()Z s
+.method_map mb/entity/MessageElement/getLicensedescriptions ()Ljava/util/Vector; t
+.method_map mb/entity/MessageElement/getMref ()Ljava/lang/String; u
+.method_map mb/entity/MessageElement/getVersions ()Ljava/util/Vector; v
+.package_map mb/db d
+.class_map mb/db/DBManager a
+.field_map mb/db/DBManager/fields a
+.field_map mb/db/DBManager/numfields if
+.field_map mb/db/DBManager/rs do
+.field_map mb/db/DBManager/rsname for
+.method_map mb/db/DBManager/getNumfields ()I a
+.method_map mb/db/DBManager/create ([[B)Z a
+.method_map mb/db/DBManager/findByPrimaryKeys (Ljava/util/Vector;)[Ljava/util/Hashtable; a
+.method_map mb/db/DBManager/setField (Ljava/lang/String;Ljava/lang/String;[B)Z a
+.method_map mb/db/DBManager/close ()V if
+.method_map mb/db/DBManager/delete (Ljava/lang/String;)Z a
+.method_map mb/db/DBManager/findAll ()[Ljava/util/Hashtable; do
+.method_map mb/db/DBManager/destroy ()V for
+.method_map mb/db/DBManager/findByPrimaryKey (Ljava/lang/String;)Ljava/util/Hashtable; if
+.method_map mb/db/DBManager/getOccupiedSpace ()I int
+.method_map mb/db/DBManager/getRecordId (Ljava/lang/String;)I do
+.method_map mb/db/DBManager/findByField (Ljava/lang/String;Ljava/lang/String;)[Ljava/util/Hashtable; a
+.method_map mb/db/DBManager/open ()Ljava/lang/String; new
+.method_map mb/db/DBManager/getAvailableSpace ()I try
+.method_map mb/db/DBManager/getRecordIds (Ljava/util/Vector;)[I if
+.method_map mb/db/DBManager/getRsname ()Ljava/lang/String; byte
+.method_map mb/db/DBManager/getFieldIndex (Ljava/lang/String;)I for
+.package_map mb/conn e
+.class_map mb/conn/ConnectionThread a
+.field_map mb/conn/ConnectionThread/buydata a
+.field_map mb/conn/ConnectionThread/SYNCHRONISECHART if
+.field_map mb/conn/ConnectionThread/status do
+.field_map mb/conn/ConnectionThread/DOWNLOAD for
+.field_map mb/conn/ConnectionThread/synchdata int
+.field_map mb/conn/ConnectionThread/fields new
+.field_map mb/conn/ConnectionThread/SYNCHRONISE try
+.field_map mb/conn/ConnectionThread/RECOMMEND byte
+.field_map mb/conn/ConnectionThread/type case
+.field_map mb/conn/ConnectionThread/BUY char
+.field_map mb/conn/ConnectionThread/SYNCHRONISEHEAP else
+.method_map mb/conn/ConnectionThread/send ([Ljava/lang/String;)V a
+.method_map mb/conn/ConnectionThread/getSynchdata ()[B a
+.method_map mb/conn/ConnectionThread/getBuydata ()[B if
+.method_map mb/conn/ConnectionThread/run ()V run
+.class_map mb/conn/ConnectionHome b
+.field_map mb/conn/ConnectionHome/in a
+.field_map mb/conn/ConnectionHome/httpheader if
+.field_map mb/conn/ConnectionHome/out do
+.field_map mb/conn/ConnectionHome/httpconn for
+.field_map mb/conn/ConnectionHome/connected int
+.field_map mb/conn/ConnectionHome/sessionid new
+.field_map mb/conn/ConnectionHome/socketconn try
+.field_map mb/conn/ConnectionHome/timeout byte
+.method_map mb/conn/ConnectionHome/send ([B)V a
+.method_map mb/conn/ConnectionHome/connect ()V a
+.method_map mb/conn/ConnectionHome/open (Ljava/lang/String;Ljava/lang/String;Z)V a
+.method_map mb/conn/ConnectionHome/receive ()[B if
+.method_map mb/conn/ConnectionHome/close ()V do
+.method_map mb/conn/ConnectionHome/init ()V for
+.package_map mb/app f
+.class_map mb/app/LogicBase a
+.field_map mb/app/LogicBase/userid a
+.field_map mb/app/LogicBase/appid if
+.field_map mb/app/LogicBase/model do
+.field_map mb/app/LogicBase/ALL for
+.field_map mb/app/LogicBase/url int
+.field_map mb/app/LogicBase/synchronizedetail new
+.field_map mb/app/LogicBase/audiosupport try
+.field_map mb/app/LogicBase/screwedup byte
+.field_map mb/app/LogicBase/servleturl case
+.field_map mb/app/LogicBase/types char
+.field_map mb/app/LogicBase/hotimage_l else
+.field_map mb/app/LogicBase/smstypes goto
+.field_map mb/app/LogicBase/recommendedimage_l long
+.field_map mb/app/LogicBase/DownloadArchiveLinks null
+.field_map mb/app/LogicBase/timezone void
+.field_map mb/app/LogicBase/HotContentLinks b
+.field_map mb/app/LogicBase/hotimage_d c
+.field_map mb/app/LogicBase/synchtime d
+.field_map mb/app/LogicBase/recommendedimage_d e
+.method_map mb/app/LogicBase/getTypeElement (I)Lmb/entity/TypeElement; a
+.method_map mb/app/LogicBase/printMemoryStat (Ljava/lang/String;)V a
+.method_map mb/app/LogicBase/populateSmsTypes (Lmb/db/DBManager;[Ljava/lang/String;)Z a
+.method_map mb/app/LogicBase/getTypeElement (Ljava/lang/String;)Lmb/entity/TypeElement; if
+.method_map mb/app/LogicBase/getSmsTypeElement (I)Ljava/util/Hashtable; if
+.method_map mb/app/LogicBase/populateTypes (Lmb/db/DBManager;[Ljava/lang/String;)Z if
+.method_map mb/app/LogicBase/contains ([II)Z a
+.method_map mb/app/LogicBase/setSynchTime (J)V a
+.method_map mb/app/LogicBase/sort ([Lmb/utils/Comparable;)V a
+.method_map mb/app/LogicBase/nonNull (Ljava/lang/Object;)[B a
+.method_map mb/app/LogicBase/getSmsTypes (Ljava/lang/String;)[I do
+.method_map mb/app/LogicBase/init ()V a
+.class_map mb/app/XMLHome b
+.field_map mb/app/XMLHome/bytecursor z
+.field_map mb/app/XMLHome/data A
+.field_map mb/app/XMLHome/extrainfo B
+.method_map mb/app/XMLHome/cleanUp ()V char
+.method_map mb/app/XMLHome/initChartContainer ()V else
+.method_map mb/app/XMLHome/decode ([B)Z a
+.method_map mb/app/XMLHome/readRecord (II)[[B a
+.method_map mb/app/XMLHome/encode ([Ljava/lang/String;)[B a
+.class_map mb/app/MobilebagLogic c
+.field_map mb/app/MobilebagLogic/newentries f
+.field_map mb/app/MobilebagLogic/dgsmmsg g
+.field_map mb/app/MobilebagLogic/buydata h
+.field_map mb/app/MobilebagLogic/oldselected i
+.field_map mb/app/MobilebagLogic/contentcache j
+.field_map mb/app/MobilebagLogic/STATUSTABLE k
+.field_map mb/app/MobilebagLogic/err l
+.field_map mb/app/MobilebagLogic/newselected m
+.field_map mb/app/MobilebagLogic/synchdata n
+.field_map mb/app/MobilebagLogic/heappagestatus o
+.field_map mb/app/MobilebagLogic/CONTENTCACHESTORE p
+.field_map mb/app/MobilebagLogic/statustable q
+.field_map mb/app/MobilebagLogic/hgsmmsgfields r
+.field_map mb/app/MobilebagLogic/hgsmmsg s
+.field_map mb/app/MobilebagLogic/oldentries t
+.field_map mb/app/MobilebagLogic/contentcachefields u
+.field_map mb/app/MobilebagLogic/messages v
+.field_map mb/app/MobilebagLogic/dgsmmsgfields w
+.field_map mb/app/MobilebagLogic/statustablefields x
+.field_map mb/app/MobilebagLogic/GSMMSGSTORE y
+.method_map mb/app/MobilebagLogic/getMessage (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lmb/entity/MessageElement; a
+.method_map mb/app/MobilebagLogic/synchronizeheap_step3 ()Ljava/lang/String; if
+.method_map mb/app/MobilebagLogic/synchronize_step3 ()Ljava/lang/String; do
+.method_map mb/app/MobilebagLogic/synchronizeheap_step2 ()Ljava/lang/String; for
+.method_map mb/app/MobilebagLogic/synchronize_step2 ()Ljava/lang/String; int
+.method_map mb/app/MobilebagLogic/synchronize_step1 ()Ljava/lang/String; new
+.method_map mb/app/MobilebagLogic/buy_step2 ()Ljava/lang/String; try
+.method_map mb/app/MobilebagLogic/getMessages (Ljava/lang/String;Ljava/lang/String;)V a
+.method_map mb/app/MobilebagLogic/buy_step1 (Ljava/lang/String;I)Ljava/lang/String; a
+.method_map mb/app/MobilebagLogic/getDBIndex (Ljava/lang/String;)I for
+.method_map mb/app/MobilebagLogic/synchronizeheap_step1 (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String; a
+.method_map mb/app/MobilebagLogic/getOccupiedSpace ()I byte
+.method_map mb/app/MobilebagLogic/download (Ljava/lang/String;)Ljava/lang/String; int
+.method_map mb/app/MobilebagLogic/getAvailableSpace ()I case
+.method_map mb/app/MobilebagLogic/init ()V a
+.method_map mb/app/MobilebagLogic/recommend (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; if

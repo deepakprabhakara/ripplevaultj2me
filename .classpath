@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/DEVTOOLS/WTK2.5.1/lib/midpapi20.jar"/>
+	<classpathentry kind="lib" path="E:/DEVTOOLS/WTK2.5.1/lib/cldcapi11.jar"/>
+	<classpathentry kind="lib" path="E:/DEVTOOLS/WTK2.5.1/lib/jsr75.jar"/>
+	<classpathentry kind="lib" path="E:/DEVTOOLS/WTK2.5.1/lib/wma11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
